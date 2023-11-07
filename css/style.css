@@ -104,13 +104,15 @@ header{
     justify-content: center;
 }
 
+#music .row{
+    flex-wrap: wrap;
+}
+
+/* COLUMN */
 #filters .col{
     width:calc(100% / 4 - 20px);
 }
 
-#music .row{
-    flex-wrap: wrap;
-}
 
 #music .col{
     width:calc(100% / 2 - 20px);
@@ -122,6 +124,10 @@ header{
 
 #mostpopular .col{
     width:calc(100% / 2 - 20px);
+}
+
+#bottom .col{
+    width:200px;
 }
 
 /* CLASSE MOMENTANEA */
