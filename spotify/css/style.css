@@ -98,6 +98,7 @@ header{
 #music .row{
     flex-wrap: wrap;
 }
+
 #music .col{
     width:calc(100% / 2 - 20px);
     margin: 10px;
@@ -105,6 +106,19 @@ header{
     height: 70px;
 }
 
+#foryou .col{
+    width:calc(100% / 2 - 20px);
+    margin: 10px;
+    background-color: pink;
+    height: 70px;
+}
+
+#mostpopular .col{
+    width:calc(100% / 2 - 20px);
+    margin: 10px;
+    background-color: pink;
+    height: 70px;
+}
 /* CLASSE MOMENTANEA */
 .empty{
     height: 80px;
