@@ -25,9 +25,10 @@
 #main-content{
     width: calc(100vw - 100px);
     background-color: red;
+    overflow-y: scroll;
 }
 
-.content{
+#content{
     margin-top: 90px;
 }
 
@@ -63,7 +64,7 @@
     width:calc(100% / 4 - 20px);
     margin: 10px;
     background-color: pink;
-    height: 200px;
+    height: 70px;
 }
 
 /* HEADER */
@@ -88,7 +89,21 @@ header{
     margin: 12px 115px;
 }
 
+/* Sezione centrale */
+#filters .row{
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+#music .row{
+    flex-wrap: wrap;
+}
+#music .col{
+    width:calc(100% / 2 - 20px);
+    margin: 10px;
+    background-color: pink;
+    height: 70px;
+}
 
 /* CLASSE MOMENTANEA */
 .empty{
