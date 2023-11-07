@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOP SECTION */
+#top{
+    height: calc(100vh - 100px);
+    background-color: blue;
+}
+
+
+#top-section{
+    display: flex;
+    background-color: green;
+    height: 100%;
+}
+
+#sidebar{
+    width: 100px;
+    background-color: blue;
+}
+
+#main-content{
+    width: calc(100vw - 100px);
+    background-color: red;
+}
+
+.content{
+    margin-top: 90px;
+}
+
+/* classi icone */
+.icons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.topicons{
+    width: 100%;
+    height: 100%;
+}
+
+/* BOTTOM SECTION */
+#bottom{
+    height: 100px;
+    background-color: rgb(88, 88, 88);
+}
+
+/* COMMON */
+.container{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+}
+
+.col{
+    width:calc(100% / 4 - 20px);
+    margin: 10px;
+    background-color: pink;
+    height: 200px;
+}
+
+/* HEADER */
+header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: gold;
+}
+
+.hr-col{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#upgrade{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    margin: 12px 115px;
+}
+
+
+
+/* CLASSE MOMENTANEA */
+.empty{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    margin: 10px;
+}
