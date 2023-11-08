@@ -53,14 +53,19 @@
 .icon-container{
     height: 80px;
     width: 80px;
-    background-color: red;
     margin: 10px;
 }
 
 #sidebar img{
-    width: 70%;
+    width: 60%;
+    margin-left: 15px;
 }
 
+.bottomicons .icon-container:last-child{
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: gray;
+}
 /* BOTTOM SECTION */
 #bottom{
     width: 100%;
