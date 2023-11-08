@@ -17,7 +17,7 @@
 
 #sidebar{
     width: 100px;
-    background-color: blue;
+    background-color: black;
     overflow: auto;
 }
 
@@ -48,6 +48,17 @@
 .topicons{
     width: 100%;
     height: 100%;
+}
+
+.icon-container{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    margin: 10px;
+}
+
+#sidebar img{
+    width: 70%;
 }
 
 /* BOTTOM SECTION */
@@ -81,7 +92,7 @@
 }
 
 #bottom .card{
-    margin: 20px 10px;
+    color: white;
 }
 
 #bottom h4{
@@ -94,14 +105,25 @@
 
 #player{
     font-size: 35px;
-}
-
-#favourite{
-    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-end;
+    color: white;
 }
 
 #volume{
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.music{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
 }
 
 /* COMMON */
@@ -217,15 +239,6 @@ img{
 
 #mostpopular .col{
     width:calc(100% / 2 - 20px);
-}
-
-
-/* CLASSE MOMENTANEA */
-.empty{
-    height: 80px;
-    width: 80px;
-    background-color: white;
-    margin: 10px;
 }
 
 /* MEDIA QUERY */
