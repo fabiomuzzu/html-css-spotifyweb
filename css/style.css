@@ -17,7 +17,7 @@
 
 #sidebar{
     width: 100px;
-    background-color: black;
+    background-color: red;
     overflow: auto;
 }
 
@@ -37,6 +37,20 @@
     color: white;
 }
 
+.bars{
+    display: none;
+}
+
+#sideplaylist ul, h2, .newplaylist{
+    margin-left: 30px;
+    color: white;
+    list-style: none;
+    padding: 10px;
+}
+
+#sideplaylist li{
+    padding: 5px;
+}
 /* classi icone */
 .icons{
     width: 100%;
@@ -259,6 +273,29 @@ img{
 
     #filters .col{
         width:calc(100% / 3 - 20px);
+    }
+
+    .icon-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .bars h4{
+        margin-left: 5px;
+        width: 200px;
+        font-size: 22px;
+        color: white;
+    }
+
+    .bars h2{
+        margin-left: 30px;
+        width: 200px;
+        font-size: 30px;
+        color: white;
     }
     
 }
