@@ -68,14 +68,41 @@
     justify-content: space-between;
 }
 
-#bottom img{
-    width: 30%;
-}
-
-#bottom .img-container{
+#bottom .col{
+    width: 100%;
+    margin: 0px 20px;
     display: flex;
 }
 
+#bottom img{
+    width: 50%;
+    margin-bottom: 5px;
+    height: 80%;
+}
+
+#bottom .card{
+    margin: 20px 10px;
+}
+
+#bottom h4{
+    color: gray;
+}
+
+#bottom .card i{
+    margin-top: 10px ;
+}
+
+#player{
+    font-size: 35px;
+}
+
+#favourite{
+    margin: 0;
+}
+
+#volume{
+    font-size: 20px;
+}
 
 /* COMMON */
 .container{
@@ -192,9 +219,6 @@ img{
     width:calc(100% / 2 - 20px);
 }
 
-#bottom .col{
-    width:200px;
-}
 
 /* CLASSE MOMENTANEA */
 .empty{
