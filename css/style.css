@@ -17,10 +17,13 @@
 
 #sidebar{
     width: 100px;
-    background-color: red;
+    background-color: black;
     overflow: auto;
 }
 
+#sidebar h4{
+    color: gray;
+}
 #main-content{
     width: calc(100vw - 100px);
     background-color: rgba(37, 41, 88, 0.9);
@@ -47,13 +50,25 @@
 
 #sideplaylist ul, h2, .newplaylist{
     margin-left: 20px;
-    color: white;
+    color: gray;
     list-style: none;
     padding: 10px;
 }
+#sideplaylist h2{
+    font-weight: 800;
+    color: white;
+}
 
 #sideplaylist li{
-    padding: 5px;
+    padding: 8px;
+}
+
+.newplaylist i{
+    font-size: 20px;
+    padding: 15px 15px;
+    color: black;
+    background-color: gray;
+    margin-right: 3px;
 }
 /* classi icone */
 .icons{
