@@ -70,7 +70,6 @@
 }
 
 .col{
-    /* width:calc(100% / 4 - 20px); */
     margin: 10px;
     background-color: pink;
     height: 70px;
@@ -81,7 +80,7 @@ header{
     position: relative;
     width: 100%;
     height: 90px;
-    background-color: gold;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hr-col{
@@ -91,11 +90,18 @@ header{
     justify-content: flex-end;
 }
 
+#upgrade a{
+    color: white;
+    text-decoration: none;
+}
+
 #upgrade{
-    width: 100px;
+    padding: 15px 60px;
+    width: 300px;
     height: 50px;
-    background-color: white;
     margin: 20px 10px;
+    border: 1px solid white;
+    border-radius: 30px;
 }
 
 /* Sezione centrale */
