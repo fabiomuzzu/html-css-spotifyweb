@@ -26,9 +26,12 @@ body{
     overflow: auto;
 }
 
-#sidebar h4{
+.bars{
     color: gray;
+    display: none;
 }
+
+
 #main-content{
     width: calc(100vw - 100px);
     background-color: rgba(37, 41, 88, 0.9);
@@ -42,10 +45,6 @@ body{
 .card{
     width: 100%;
     color: white;
-}
-
-.bars{
-    display: none;
 }
 
 #sideplaylist{
@@ -80,6 +79,8 @@ body{
     background-color: gray;
     margin-right: 3px;
 }
+
+
 /* classi icone */
 .icons{
     width: 100%;
@@ -172,6 +173,10 @@ body{
     margin: 0 10px;
 }
 
+.song{
+    display: none;
+}
+
 .song h5{
     color: gray;
 }
@@ -189,10 +194,11 @@ body{
 .favourite{
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .favourite i{
-    padding: 3px 10px;
+    padding: 5px 20px;
     color: gray;
 }
 
@@ -207,6 +213,7 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
 }
 
@@ -246,7 +253,7 @@ body{
 }
 
 .player-button i{
-    padding: 0px 1.5rem;
+    padding: 0px 10px;
     color: white;
     font-size: 25px;
 }
@@ -262,10 +269,6 @@ body{
     position: relative;
 }
 
-.player-bar:hover .elapsed-time{
-    background-color: rgb(153, 255, 0);
-}
-
 .controller-point{
     width: 15px;
     height: 15px;
@@ -278,13 +281,10 @@ body{
     display: none;
 }
 
-.player-bar:hover .controller-point{
-    display: block;
+.right .fa-bars, .fa-desktop{
+    display: none;
 }
 
-.volume-bar:hover .controller-point{
-    display: block;
-}
 /* COMMON */
 .container{
     width: 100%;
@@ -445,16 +445,38 @@ img{
         margin-left: 5px;
         width: 200px;
         font-size: 22px;
-        color: white;
     }
 
     .bars h2{
         margin-left: 30px;
         width: 200px;
         font-size: 30px;
+    }
+    
+    #home h4{
+        color: white;
+    }
+
+    .bars:hover{
+        color: white;
+    }
+
+    .bars:last-child h2{
+        color: white;
+    }
+
+    .newplaylist:hover{
         color: white;
     }
     
+    .newplaylist:hover i{
+        background-color: white;
+    }
+
+    li:hover{
+        color: white;
+    }
+
     #logo-small{
         display: none;
     }
@@ -470,6 +492,20 @@ img{
     #sideplaylist{
         display: block;
     }
+
+    .player-button i{
+        padding: 0px 20px;
+    }
+
+    .song{
+        display: block;
+        margin: 0 13px;
+    }
+
+    .right .fa-bars, .fa-desktop{
+        display: block;
+    }
+    
 }
 
 @media screen and (min-width: 992px){
@@ -540,4 +576,30 @@ img{
 
 header:hover #upgrade{
     transform: scale(1.1);
+}
+
+.artist h5:hover{
+    color: white;
+    text-decoration: underline white;
+}
+
+.favourite .fa-heart:hover,
+.favourite .fa-folder:hover{
+    color: white;
+}
+
+.player-bar:hover .elapsed-time{
+    background-color: rgb(153, 255, 0);
+}
+
+.player-bar:hover .controller-point{
+    display: block;
+}
+
+.volume-bar:hover .controller-point{
+    display: block;
+}
+
+.center .fa-circle-play:hover{
+    font-size: 55px;
 }
