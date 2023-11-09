@@ -93,15 +93,35 @@ body{
     margin: 10px;
 }
 
+.bottomicons .icon-container{
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
 #sidebar img{
     width: 60%;
     margin-left: 15px;
+}
+
+#sidebar .bottomicons .icon-container img{
+    margin-left: 12px;
+}
+
+
+.bottomicons img:last-child{
+    margin-left: 0px;
 }
 
 .bottomicons .icon-container:last-child{
     border: 1px solid gray;
     border-radius: 50%;
     background-color: gray;
+    margin-left: 15px;
+}
+
+#logo{
+    display: none;
 }
 /* BOTTOM SECTION */
 #bottom{
@@ -413,6 +433,18 @@ img{
         color: white;
     }
     
+    #logo-small{
+        display: none;
+    }
+
+    #logo{
+        display: block;
+    }
+
+    #logo .icon-container{
+        width: 90%;
+    }
+
     #sideplaylist{
         display: block;
     }
