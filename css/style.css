@@ -20,6 +20,7 @@ body{
 }
 
 #sidebar{
+    height: 100%;
     width: 100px;
     background-color: black;
     overflow: auto;
@@ -31,7 +32,6 @@ body{
 #main-content{
     width: calc(100vw - 100px);
     background-color: rgba(37, 41, 88, 0.9);
-    overflow-y: scroll;
 }
 
 #content{
@@ -50,6 +50,12 @@ body{
 
 #sideplaylist{
     display: none;
+    height: calc(100% - ( 80px * 4 ));
+}
+
+#sideplaylist ul{
+    height: calc(100% - 120px);
+    overflow: auto;
 }
 
 #sideplaylist ul, h2, .newplaylist{
@@ -64,7 +70,7 @@ body{
 }
 
 #sideplaylist li{
-    padding: 8px;
+    padding: 8px 0;
 }
 
 .newplaylist i{
@@ -79,12 +85,14 @@ body{
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 }
 
 .topicons{
     width: 100%;
-    height: 100%;
+    height: 80%;
+    overflow: hidden;
 }
 
 .icon-container{
@@ -372,7 +380,7 @@ header{
 .play{
     position: absolute;
     width: 100%;
-    height: 98%;
+    height: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -384,6 +392,7 @@ header{
 img{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 #mostpopular img{
@@ -416,7 +425,7 @@ img{
 
     #main-content {
         width: calc(100vw - 350px);
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     #filters .col{
@@ -526,6 +535,7 @@ img{
 .card:hover p{
     color: white;
     cursor: pointer;
+    font-weight: 900;
 }
 
 header:hover #upgrade{
