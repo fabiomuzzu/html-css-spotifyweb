@@ -106,64 +106,113 @@
     background-color: rgb(88, 88, 88);
     position: relative;
     z-index: 1;
-}
-
-#bottom .container{
-    height: 100%;
-}
-
-#bottom .row{
-    height: 100%;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-#bottom .col{
-    width: 100%;
-    margin: 0px 20px;
-    display: flex;
+.left, .right{
+    width: 250px;
+    height: 60px;
+    background-color: red;
 }
 
-#bottom img{
+.center{
     width: 50%;
-    margin-bottom: 5px;
-    height: 80%;
+    height: 80px;
+    background-color: blue;
+    margin: 0px 10px;
 }
 
-#bottom .card{
-    color: white;
-}
-
-#bottom h4{
-    color: gray;
-}
-
-#bottom .card i{
-    margin-top: 10px ;
-}
-
-#player{
-    font-size: 35px;
-    text-align: center;
+.controller{
+    height: 20%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: flex-end;
-    color: white;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#volume{
-    font-size: 20px;
+.function-button{
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    color: white;
 }
 
-.music{
+.function-button i{
+    padding: 0px 5px;
+}
+
+
+.controller-min, .controller-max{
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+}
+
+.player-bar{
+    height: 4px;
+    width: 80%;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.volume-bar{
+    height: 4px;
+    width: 50%;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.player-button{
+    height: 80%;
+    width: 100%;
     display: flex;
-    align-self: center;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.player-button i{
+    padding: 0px 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.player-button .fa-circle-play{
+    font-size: 45px;
+}
+.elapsed-time{
+    width: 20%;
+    height: 4px;
+    background-color: lightgray;
+    border-radius: 5px;
+    position: relative;
+}
+
+.player-bar:hover .elapsed-time{
+    background-color: rgb(153, 255, 0);
+}
+
+.controller-point{
+    width: 15px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.player-bar:hover .controller-point{
+    display: block;
+}
+
+.volume-bar:hover .controller-point{
+    display: block;
+}
 /* COMMON */
 .container{
     width: 100%;
