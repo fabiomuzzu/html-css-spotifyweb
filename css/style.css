@@ -478,8 +478,8 @@ img{
     }
 
     .favourite{
-        display: block;
-        margin: 0px 20px;
+        display: flex;
+        flex-direction: row;
     }
 
 
